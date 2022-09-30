@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Gritando no telefone </title>
+</head>
+<body>
+    
+    <!-- Scripts -->
+    <script src="Script1.js"></script>
+    <script src="Script2.js"></script>
+    <script src="Script3.js"></script>
+    <script src="Script4.js"></script>
+    <script src="Script5.js"></script>
+
+    <!-- Exercício 3 -->
+
+    <br>
+    Exercício 3
+    <div class="container">
+
+        <label for="peso">Peso(KG)</label>
+        <input id="peso" name="peso" type="text">
+
+        <label for="altura">Altura(cm)</label>
+        <input id="altura" name="altura" type="text">
+        
+        <button id="CIMC">Calcular</button>
+    
+        <div id="resultado"></div>
+    </div>
+
+    <!--  Créditos á Esse Site: https://acervolima.com/projete-uma-calculadora-de-imc-usando-javascript/ -->
+
+    <!-- Exercício 4 -->
+    <br>
+    Exercício 4
+    <br>
+    Tabuadado Número: <input id="num" type="number"> <br />
+    <button onclick="tabuada()">Exibir</button><br />
+    Tabuada: <br />
+    <div id="resposta" style="display: inline"></div>
+
+    <!-- Créditos á Esse Site https://www.javascriptprogressivo.net/2018/12/Como-Criar-Tabuada-JavaScript.html#:~:text=Tabuada%20de%20Qualquer%20N%C3%BAmero&text=Usamos%20um%20campo%20de%20input,esse%20elemento%20%C3%A9%20o%20JavaScript -->
+
+    <!--  Exercício 5 -->
+
+    <!-- Fahrenheit para Celsius -->
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+        oninput="temperatureConverter(this.value)"
+        oncharge="temperatureConverter(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+
+    <!-- Celsius para Fahrenheit -->
+    <p>
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius"
+        oninput="tempConverter(this.value)"
+
+        oncharge="tempConverter(this.value)">
+    </p>
+    <p>Celsius: <span id="outputFahrenheit"></span></p>
+
+    <!-- Créditos á esse Site: https://www.w3schools.com/howto/howto_js_temperature_converter.asp -->
+</body>
+</html>
